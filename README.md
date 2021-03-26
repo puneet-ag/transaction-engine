@@ -8,6 +8,10 @@ Steps to run application :
 
 4. run the application using command: java -jar target/app-0.0.1.jar
 
+
+
+
+
 Details about application :
 
 1. The application will start running at port 9010
@@ -15,6 +19,11 @@ Details about application :
 2. For simplicity the database used is embedded inmemory db (h2)
 
 3. The console for h2 will be available at  url : http://127.0.0.1:9010/h2 ,  username : test, password : test and jdbc url : jdbc:h2:mem:transactionsdb
+
+
+
+
+
 
 
 API details:
@@ -34,11 +43,18 @@ curl --location --request PUT '127.0.0.1:9010/transactionservice/transaction/2/'
   "parent_id": 1
 }'
 
+
+
+
 2. APi to get transaction with given id.
 
 Curl : To get transaction details for transaction with id 1
 
 curl --location --request GET '127.0.0.1:9010/transactionservice/transaction/1/'  
+
+
+
+
 
 
 3. Api to get a list of transaction ids which are of given type.
@@ -47,6 +63,10 @@ Curl: Get all the transaction of type Type1
 
 curl --location --request GET '127.0.0.1:9010/transactionservice/types/Type1/'
 
+
+
+
+
 4. Api to get sum of all the transaction's amount in a given tree with common ancestor represented by transaction id
 
 Curl : get sum of all transactions amount whose common ancestor is 10
@@ -54,5 +74,8 @@ Curl : get sum of all transactions amount whose common ancestor is 10
 curl --location --request GET '127.0.0.1:9010/transactionservice/sum/10/'
 
 
+
+
+--
 Please feel free to reach out to me in case of queries related to this project
 To collaborate email at : agarwal.puneet011@gmail.com
