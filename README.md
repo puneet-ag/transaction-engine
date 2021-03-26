@@ -1,12 +1,14 @@
 Steps to run application :
 
-1. cd transaction-engine/app
+1. git clone https://github.com/puneet-ag/transaction-engine.git
 
-2. compile using ./mvnw clean install 
+2. cd transaction-engine/app
 
-3. cd target/
+3. compile using ./mvnw clean install 
 
-4. run the application using command: java -jar target/app-0.0.1.jar
+4. cd target/
+
+5. run the application using command: java -jar target/app-0.0.1.jar
 
 
 
