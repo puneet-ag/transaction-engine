@@ -9,7 +9,7 @@ Steps to run application :
 4. run the application using command: java -jar target/app-0.0.1.jar
 
 
-<br /><br /><br />
+<br /><br />
 
 
 Details about application :
@@ -20,7 +20,7 @@ Details about application :
 
 3. The console for h2 will be available at  url : http://127.0.0.1:9010/h2 ,  username : test, password : test and jdbc url : jdbc:h2:mem:transactionsdb
 
-<br /><br /><br />
+<br /><br />
 
 
 API details:
@@ -30,7 +30,7 @@ There are 4 apis :
 1. Api to create/update transaction for a given data
 <br />
 Curl : To create a transaction with id 2 and amount = 200, type = Type 1 and whose parent is txn with id 1
-<br /><br />
+<br />
 curl --location --request PUT '127.0.0.1:9010/transactionservice/transaction/2/' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -39,25 +39,25 @@ curl --location --request PUT '127.0.0.1:9010/transactionservice/transaction/2/'
   "parent_id": 1
 }'
 
-<br /><br /><br /><br />
+<br /><br />
 
 
 2. APi to get transaction with given id.
 <br />
 Curl : To get transaction details for transaction with id 1
-<br /><br />
+<br />
 curl --location --request GET '127.0.0.1:9010/transactionservice/transaction/1/'  
 
 
-<br /><br /><br /><br />
+<br /><br />
 
 
 3. Api to get a list of transaction ids which are of given type.
 <br />
 Curl: Get all the transaction of type Type1
-<br /><br />
+<br />
 curl --location --request GET '127.0.0.1:9010/transactionservice/types/Type1/'
-<br /><br /><br /><br />
+<br /><br />
 
 
 
@@ -65,10 +65,10 @@ curl --location --request GET '127.0.0.1:9010/transactionservice/types/Type1/'
 4. Api to get sum of all the transaction's amount in a given tree with common ancestor represented by transaction id
 <br />
 Curl : get sum of all transactions amount whose common ancestor is 10
-<br /><br />
+<br />
 curl --location --request GET '127.0.0.1:9010/transactionservice/sum/10/'
 
-<br /><br /><br /><br />
+<br /><br />
 
 
 --
