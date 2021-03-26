@@ -1,23 +1,23 @@
+Steps to run application :
+
 1. cd transaction-engine/app
 
 2. compile using ./mvnw clean install 
 
 3. cd target/
 
-run the application using :
-java -jar target/app-0.0.1.jar
+4. run the application using command: java -jar target/app-0.0.1.jar
 
-Details :
+Details about application :
 
-The application will start running at port 9010
+1. The application will start running at port 9010
 
-For simplicity the database used is embedded inmemory db (h2)
+2. For simplicity the database used is embedded inmemory db (h2)
 
-The console for h2 will be available at http://127.0.0.1:9010/h2
-username : test
-password : test
-jdbc url : jdbc:h2:mem:transactionsdb
+3. The console for h2 will be available at  url : http://127.0.0.1:9010/h2 ,  username : test, password : test and jdbc url : jdbc:h2:mem:transactionsdb
 
+
+API details:
 
 There are 4 apis :
 
@@ -52,3 +52,7 @@ curl --location --request GET '127.0.0.1:9010/transactionservice/types/Type1/'
 Curl : get sum of all transactions amount whose common ancestor is 10
 
 curl --location --request GET '127.0.0.1:9010/transactionservice/sum/10/'
+
+
+Please feel free to reach out to me in case of queries related to this project
+To collaborate email at : agarwal.puneet011@gmail.com
