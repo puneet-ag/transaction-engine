@@ -5,9 +5,7 @@ Steps to run application :
 2. cd transaction-engine/app
 
 3. compile using ./mvnw clean install 
-
-4. cd target/
-
+4. 
 5. run the application using command: java -jar target/app-0.0.1.jar
 
 
